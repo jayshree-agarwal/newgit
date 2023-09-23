@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     
+    
+      function fun(){
+        var fnum=document.getElementById("a1").value;
+        var snum=document.getElementById("b1").value;
+        var tot=parseInt(fnum)+ parseInt(snum);
+
+        document.getElementById("result").innerHTML=tot;
+    }
+    function fun1(){
+        var fnum=document.getElementById("a1").value;
+        var snum=document.getElementById("b1").value;
+        var tot=parseInt(fnum)- parseInt(snum);
+
+        document.getElementById("result").innerHTML=tot;
+    }
+    function fun2(){
+        var fnum=document.getElementById("a1").value;
+        var snum=document.getElementById("b1").value;
+        var tot=parseInt(fnum)* parseInt(snum);
+
+        document.getElementById("result").innerHTML=tot;
+    }
+    function fun3(){
+        var fnum=document.getElementById("a1").value;
+        var snum=document.getElementById("b1").value;
+        var tot=parseInt(fnum)/parseInt(snum);
+
+        document.getElementById("result").innerHTML=tot;
+    }
+    function fun4(){
+        var fnum=document.getElementById("a1").value;
+        var snum=document.getElementById("b1").value;
+        var tot=parseInt(fnum)% parseInt(snum);
+
+        document.getElementById("result").innerHTML=tot;
+    }
+     
+  
+    </script>
+
+</head>
+<body>
+    <h1>CALCULATER:</h1>
+    Enter First Number &nbsp; &nbsp;:<input id="a1"/><br/><br>
+    Enter Second Number:<input id="b1"/><br/><br>
+    Result:&nbsp;   &nbsp;<h; id="result"></h2>
+    <button onclick="fun()">ADD</button>
+    <button onclick="fun1()">SUB</button>
+    <button onclick="fun2()">MUL</button>
+    <button onclick="fun3()">DIV</button>
+    <button onclick="fun4()">REMIENDER</button>
+
+
+
+
+
+    
+</body>
+</html>
